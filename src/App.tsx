@@ -2,6 +2,7 @@ import React, { useState, FormEvent } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Code, Globe, Sparkles } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
+import myprofile from './assets/myprofile.jpg'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -85,27 +86,27 @@ function App() {
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <img
-                src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&auto=format&fit=crop&q=80"
+                src={myprofile}
                 alt="Profile"
                 className="w-32 h-32 rounded-full border-4 border-white shadow-lg"
               />
             </div>
             <h1 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-7xl">
               <span className="block">Hi, I'm</span>
-              <span className="block gradient-text mt-2">Your Name</span>
+              <span className="block gradient-text mt-2">Aparajita Mehrotra</span>
             </h1>
             <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
               A passionate Full Stack Developer crafting beautiful digital experiences. 
               Specializing in modern web technologies and creative solutions.
             </p>
             <div className="mt-8 flex justify-center gap-6">
-              <a href="https://github.com" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
+              <a href="https://github.com/AparajitaM05" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
                 <Github size={28} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
+              <a href="https://www.linkedin.com/in/aparajita-mehrotra-336550237/" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
                 <Linkedin size={28} />
               </a>
-              <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
+              <a href="mailto:sonivanshu012@gmail.com" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
                 <Mail size={28} />
               </a>
             </div>
@@ -192,12 +193,10 @@ function App() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {[
-              { name: 'JavaScript', level: 'Advanced' },
-              { name: 'React', level: 'Expert' },
-              { name: 'Node.js', level: 'Advanced' },
-              { name: 'TypeScript', level: 'Advanced' },
-              { name: 'Python', level: 'Intermediate' },
-              { name: 'SQL', level: 'Advanced' },
+              { name: 'JavaScript', level: 'Intermidiate' },
+              { name: 'React', level: 'Intermidiate' },
+              { name: 'Node.js', level: 'Intermidiate' },
+              { name: 'React Native', level: 'Intermidiate' },
               { name: 'AWS', level: 'Intermediate' },
               { name: 'Docker', level: 'Intermediate' }
             ].map((skill, index) => (
@@ -283,14 +282,14 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 className="text-2xl font-bold gradient-text inline-block">Your Name</h3>
+              <h3 className="text-2xl font-bold gradient-text inline-block">Aparajita Mehrotra</h3>
               <p className="mt-2 text-gray-400">Building digital experiences with passion and purpose</p>
             </div>
             <div className="flex justify-start md:justify-end gap-6">
-              <a href="https://github.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/AparajitaM05" className="text-gray-400 hover:text-white transition-colors">
                 <Github size={24} />
               </a>
-              <a href="https://linkedin.com" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/in/aparajita-mehrotra-336550237/" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="mailto:your.email@example.com" className="text-gray-400 hover:text-white transition-colors">
@@ -299,7 +298,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Aparajita Mehrotra. All rights reserved.</p>
           </div>
         </div>
       </footer>

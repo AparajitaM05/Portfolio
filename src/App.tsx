@@ -185,7 +185,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-gray-50">
+      {/* <section id="skills" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold gradient-text inline-block">Skills & Expertise</h2>
@@ -207,7 +207,84 @@ function App() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+<section id="contact" className="py-20 bg-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="text-center mb-16">
+      <h2 className="text-4xl font-bold gradient-text inline-block">Get in Touch</h2>
+      <p className="mt-4 text-gray-500 text-lg">Interested in working together? Let's talk!</p>
+    </div>
+
+    <div className="max-w-xl mx-auto">
+      {/* Form using FormSubmit */}
+      <form 
+        action="https://formsubmit.co/sonivanshu012@gmail.com" 
+        method="POST" 
+        className="space-y-6"
+      >
+        {/* Hidden fields for subject and disabling captcha */}
+        <input type="hidden" name="_subject" value="New Contact Form Submission" />
+        <input type="hidden" name="_captcha" value="false" />
+
+        {/* Name Field */}
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+            Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="input-style"
+            placeholder="Your name"
+            required
+          />
+        </div>
+
+        {/* Email Field */}
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            Email
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="input-style"
+            placeholder="your.email@example.com"
+            required
+          />
+        </div>
+
+        {/* Message Field */}
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows={4}
+            className="input-style"
+            placeholder="Your message here..."
+            required
+          />
+        </div>
+
+        {/* Submit Button */}
+        <div>
+          <button
+            type="submit"
+            className="w-full flex justify-center py-3 px-4 rounded-lg shadow-md text-sm font-medium text-white button-gradient focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-white">

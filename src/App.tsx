@@ -172,7 +172,7 @@ function App() {
                     ))}
                   </div>
                   <a
-                    href="https://vercel.com/aparajitas-projects-d3d8a2a5/plannit/EAZhvEeXZupD3jC6AC6TxMVR1pLq"
+                    href="https://plannit-7ij3hxfbb-aparajitas-projects-d3d8a2a5.vercel.app/"
                     className="inline-flex items-center text-indigo-600 hover:text-indigo-500 font-medium"
                   >
                     View Project <ExternalLink size={16} className="ml-1" />

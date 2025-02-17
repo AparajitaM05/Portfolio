@@ -127,10 +127,10 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "E-Commerce Platform",
-                description: "A full-featured online store with React, Node.js, and Stripe integration",
+                title: "Instant Plan Platform",
+                description: "A full-featured online Planner with React, Node.js, and Mongodb integration",
                 image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
-                tech: ["React", "Node.js", "Stripe"],
+                tech: ["React", "Node.js", "Mongodb"],
                 icon: <Globe className="text-indigo-600" size={20} />
               },
               {
@@ -172,7 +172,7 @@ function App() {
                     ))}
                   </div>
                   <a
-                    href="#"
+                    href="https://vercel.com/aparajitas-projects-d3d8a2a5/plannit/EAZhvEeXZupD3jC6AC6TxMVR1pLq"
                     className="inline-flex items-center text-indigo-600 hover:text-indigo-500 font-medium"
                   >
                     View Project <ExternalLink size={16} className="ml-1" />

@@ -185,7 +185,7 @@ function App() {
       </section>
 
       {/* Skills Section */}
-      {/* <section id="skills" className="py-20 bg-gray-50">
+      <section id="skills" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold gradient-text inline-block">Skills & Expertise</h2>
@@ -207,9 +207,12 @@ function App() {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
-<section id="contact" className="py-20 bg-white">
+
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="text-center mb-16">
       <h2 className="text-4xl font-bold gradient-text inline-block">Get in Touch</h2>
@@ -285,9 +288,7 @@ function App() {
     </div>
   </div>
 </section>
-
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      {/* <section id="contact" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold gradient-text inline-block">Get in Touch</h2>
@@ -352,7 +353,7 @@ function App() {
             </form>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

@@ -133,20 +133,20 @@ function App() {
                 tech: ["React", "Node.js", "Mongodb"],
                 icon: <Globe className="text-indigo-600" size={20} />
               },
-              {
-                title: "AI Code Assistant",
-                description: "An intelligent coding assistant powered by machine learning",
-                image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60",
-                tech: ["Python", "TensorFlow", "FastAPI"],
-                icon: <Code className="text-indigo-600" size={20} />
-              },
-              {
-                title: "Smart Analytics Dashboard",
-                description: "Real-time data visualization and analytics platform",
-                image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
-                tech: ["React", "D3.js", "Firebase"],
-                icon: <Sparkles className="text-indigo-600" size={20} />
-              }
+              // {
+              //   title: "AI Code Assistant",
+              //   description: "An intelligent coding assistant powered by machine learning",
+              //   image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60",
+              //   tech: ["Python", "TensorFlow", "FastAPI"],
+              //   icon: <Code className="text-indigo-600" size={20} />
+              // },
+              // {
+              //   title: "Smart Analytics Dashboard",
+              //   description: "Real-time data visualization and analytics platform",
+              //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+              //   tech: ["React", "D3.js", "Firebase"],
+              //   icon: <Sparkles className="text-indigo-600" size={20} />
+              // }
             ].map((project, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                 <div className="relative">
@@ -288,73 +288,6 @@ function App() {
     </div>
   </div>
       </section>
-      
-      {/* <section id="contact" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold gradient-text inline-block">Get in Touch</h2>
-            <p className="mt-4 text-gray-500 text-lg">Interested in working together? Let's talk!</p>
-          </div>
-          <div className="max-w-xl mx-auto">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className="input-style"
-                  placeholder="Your name"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className="input-style"
-                  placeholder="your.email@example.com"
-                  required
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows={4}
-                  className="input-style"
-                  placeholder="Your message here..."
-                  required
-                />
-              </div>
-              <div>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full flex justify-center py-3 px-4 rounded-lg shadow-md text-sm font-medium text-white button-gradient focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">

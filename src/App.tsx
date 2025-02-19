@@ -1,17 +1,12 @@
-import React, { useState, FormEvent } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Code, Globe, Sparkles } from 'lucide-react';
-import emailjs from '@emailjs/browser';
-import toast, { Toaster } from 'react-hot-toast';
+import React, { useState } from 'react';
+import { Github, Linkedin, Mail, ExternalLink, ChevronDown, Globe } from 'lucide-react';
+
+import  { Toaster } from 'react-hot-toast';
 import myprofile from './assets/myprofile.jpg'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  // const [isSubmitting, setIsSubmitting] = useState(false);
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   email: '',
-  //   message: ''
-  // });
+  
 
   React.useEffect(() => {
     const handleScroll = () => {

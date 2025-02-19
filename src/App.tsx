@@ -6,12 +6,12 @@ import myprofile from './assets/myprofile.jpg'
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   message: ''
+  // });
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -21,45 +21,9 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast.error('Please fill in all fields');
-      return;
-    }
+ 
 
-    setIsSubmitting(true);
-
-    try {
-      await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        {
-          from_name: formData.name,
-          from_email: formData.email,
-          message: formData.message,
-          to_name: 'Your Name', // Replace with your name
-        },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
-      );
-
-      toast.success('Message sent successfully!');
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      toast.error('Failed to send message. Please try again.');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
+  
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -133,20 +97,7 @@ function App() {
                 tech: ["React", "Node.js", "Mongodb"],
                 icon: <Globe className="text-indigo-600" size={20} />
               },
-              // {
-              //   title: "AI Code Assistant",
-              //   description: "An intelligent coding assistant powered by machine learning",
-              //   image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&auto=format&fit=crop&q=60",
-              //   tech: ["Python", "TensorFlow", "FastAPI"],
-              //   icon: <Code className="text-indigo-600" size={20} />
-              // },
-              // {
-              //   title: "Smart Analytics Dashboard",
-              //   description: "Real-time data visualization and analytics platform",
-              //   image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
-              //   tech: ["React", "D3.js", "Firebase"],
-              //   icon: <Sparkles className="text-indigo-600" size={20} />
-              // }
+          
             ].map((project, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                 <div className="relative">

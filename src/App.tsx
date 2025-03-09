@@ -90,14 +90,16 @@ function App() {
                 description: "A full-featured online Planner with React, Node.js, and Mongodb integration",
                 image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
                 tech: ["React", "Node.js", "Mongodb"],
-                icon: <Globe className="text-indigo-600" size={20} />
+                icon: <Globe className="text-indigo-600" size={20} />,
+                link: "https://plannit-3uca.vercel.app/"
               },
               {
                 title: "Data Dashboard Platform",
-                description: "A full-functional Data Dashbaord with React, Node.js, ETL and Aws integration",
+                description: "A full-functional Data Dashboard with React, Node.js, ETL and Aws integration",
                 image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&auto=format&fit=crop&q=60",
                 tech: ["React", "Node.js", "Supabase", "AWS ec2","AWS s3","AWS Lambda"],
-                icon: <Globe className="text-indigo-600" size={20} />
+                icon: <Globe className="text-indigo-600" size={20} />,
+                link: "https://dataengfront.vercel.app"
               },
           
             ].map((project, index) => (

@@ -132,37 +132,7 @@ function App() {
                   </a>
                 </div>
               </div>
-               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
-               <div className="relative">
-                 <img
-                   src={project.image}
-                   alt={project.title}
-                   className="w-full h-48 object-cover"
-                 />
-                 <div className="absolute top-4 right-4 bg-white p-2 rounded-full shadow-lg">
-                   {project.icon}
-                 </div>
-               </div>
-               <div className="p-6">
-                 <h3 className="text-xl font-bold mb-2 text-gray-900">{project.title}</h3>
-                 <p className="text-gray-600 mb-4">
-                   {project.description}
-                 </p>
-                 <div className="flex flex-wrap gap-2 mb-4">
-                   {project.tech.map((tech, i) => (
-                     <span key={i} className="px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full text-sm">
-                       {tech}
-                     </span>
-                   ))}
-                 </div>
-                 <a
-                   href="https://dataengfront.vercel.app/"
-                   className="inline-flex items-center text-indigo-600 hover:text-indigo-500 font-medium"
-                 >
-                   View Project <ExternalLink size={16} className="ml-1" />
-                 </a>
-               </div>
-             </div>
+              
             ))}
           </div>
         </div>

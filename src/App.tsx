@@ -127,7 +127,7 @@ function App() {
                     ))}
                   </div>
                   <a
-                    href="https://plannit-3uca.vercel.app/"
+                    href={project.link}
                     className="inline-flex items-center text-indigo-600 hover:text-indigo-500 font-medium"
                   >
                     View Project <ExternalLink size={16} className="ml-1" />

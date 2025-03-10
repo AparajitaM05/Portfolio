@@ -55,8 +55,8 @@ function App() {
               <span className="block gradient-text mt-2">Aparajita Mehrotra</span>
             </h1>
             <p className="mt-6 text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed">
-              A passionate Full Stack Developer crafting beautiful digital experiences. 
-              Specializing in modern web technologies and creative solutions.
+            A passionate Data Engineer building scalable and efficient data pipelines.
+Specializing in modern data technologies, ETL workflows, and insightful data visualizations.
             </p>
             <div className="mt-8 flex justify-center gap-6">
               <a href="https://github.com/AparajitaM05" className="text-gray-600 hover:text-indigo-600 transition-colors transform hover:scale-110">
